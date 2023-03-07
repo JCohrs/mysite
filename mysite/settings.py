@@ -25,11 +25,11 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-mr_=ib#5pq&td6flg@7wbu4-wgi&&vos$xwts(&okzn!lzgxpc'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-mr_=ib#5pq&td6flg@7wbu4-wgi&&vos$xwts(&okzn!lzgxpc')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG') != 'False'
 
 ALLOWED_HOSTS = []
 
