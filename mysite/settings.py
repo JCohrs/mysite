@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG') != 'False'
 
-ALLOWED_HOSTS = ['www.jeffinjapan.blog']
+ALLOWED_HOSTS = ['www.jeffinjapan.blog',
+                 'jeffinjapan.blog',]
 
 
 # Application definition
